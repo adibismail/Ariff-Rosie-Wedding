@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -769,13 +769,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #F14E95;
   padding-left: 10px;
   padding-right: 10px;
@@ -943,6 +943,10 @@ form label {
 .simply-countdown {
   /* The countdown */
   margin-bottom: 1em;
+  position: absolute;
+  top: 25%; /* adjust the top position of the button */
+  left: 68%; /* adjust the left position of the button */
+  z-index: 2; /* set a higher z-index than the image */
 }
 
 .simply-countdown > .simply-section {
@@ -983,19 +987,19 @@ form label {
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
   display: block;
-  color: white;
+  color: #976071;
   /* amounts and words */
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 40px;
   /* amounts */
 }
 
 .simply-countdown > .simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
+  color: #000;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   /* words */
 }
 
@@ -1233,7 +1237,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 100px;
   height: 100px;
 }
@@ -1697,6 +1701,42 @@ form label {
   background: #F14E95;
   color: #fff;
 }
+
+/* Along */
+.btn-rsvp {
+  background: #976071;
+  color: #fff;
+  border: 2px solid;
+  width: 30%;
+  position: absolute; /* set button to an absolute position */
+  top: 73%; /* adjust the top position of the button */
+  left: 50%; /* adjust the left position of the button */
+  transform: translate(-50%, -50%); /* center the button */
+  z-index: 2; /* set a higher z-index than the image */
+}
+.btn-rsvp:hover, .btn-rsvp:focus, .btn-rsvp:active {
+  background: #4cae4c !important;
+  border-color: #4cae4c !important;
+}
+.btn-rsvp.btn-outline {
+  background: transparent;
+  color: #5cb85c;
+  border: 2px solid #5cb85c;
+}
+.btn-rsvp.btn-outline:hover, .btn-rsvp.btn-outline:focus, .btn-rsvp.btn-outline:active {
+  background: #5cb85c;
+  color: #fff;
+}
+
+.map {
+  position: absolute;
+  top: 51%; /* adjust the top position of the button */
+  left: 29%; /* adjust the left position of the button */
+  transform: translate(-50%, -50%); /* center the button */
+  z-index: 2; /* set a higher z-index than the image */
+  border-color: #000;
+}
+/* End of Along */
 
 .btn-success {
   background: #5cb85c;
