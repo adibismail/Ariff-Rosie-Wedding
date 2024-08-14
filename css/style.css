@@ -1801,6 +1801,12 @@ form label {
   height: 100%;
 }
 
+.responsive-image {
+  max-width: 100%; /* Ensure image doesn't exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space/gap */
+  margin: 0 auto; /* Center image if container allows */
+}
 /* End of Along */
 
 .btn-success {
