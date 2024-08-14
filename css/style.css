@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  display: inline;
+  *display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -769,13 +769,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  display: inline;
+  *display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  display: inline;
+  *display: inline;
   color: #F14E95;
   padding-left: 10px;
   padding-right: 10px;
@@ -943,10 +943,6 @@ form label {
 .simply-countdown {
   /* The countdown */
   margin-bottom: 1em;
-  position: absolute;
-  top: 25%; /* adjust the top position of the button */
-  left: 68%; /* adjust the left position of the button */
-  z-index: 2; /* set a higher z-index than the image */
 }
 
 .simply-countdown > .simply-section {
@@ -1237,7 +1233,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  display: inline;
+  *display: inline;
   width: 100px;
   height: 100px;
 }
@@ -1708,8 +1704,8 @@ form label {
   color: #fff;
   border: 2px solid;
   width: 30%;
-  position: absolute; /* set button to an absolute position */
-  top: 73%; /* adjust the top position of the button */
+  position: relative; /* set button to an absolute position */
+  top: 65.5%; /* adjust the top position of the button */
   left: 50%; /* adjust the left position of the button */
   transform: translate(-50%, -50%); /* center the button */
   z-index: 2; /* set a higher z-index than the image */
@@ -1728,13 +1724,28 @@ form label {
   color: #fff;
 }
 
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 50px 20;
+  font-family: 'SPECTRAL SC', serif;
+  text-align: center;
+}
+
+.wedding-prayer {
+  font-family: 'SPECTRAL SC', serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-text {
+  font-family: 'Allison';
+  color: #976071;
+  font-size: 70px;
+}
 .map {
-  position: absolute;
-  top: 51%; /* adjust the top position of the button */
-  left: 29%; /* adjust the left position of the button */
-  transform: translate(-50%, -50%); /* center the button */
-  z-index: 2; /* set a higher z-index than the image */
-  border-color: #000;
+  text-align: right;
 }
 /* End of Along */
 
