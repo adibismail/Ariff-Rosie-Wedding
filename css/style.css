@@ -1699,12 +1699,59 @@ form label {
 }
 
 /* Along */
+.background-container {
+  /* background-image: url('images/along/background1.png'); */
+  background-size: fill;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* padding: 20px; */
+  padding-top: 300px;
+  border-radius: 10px;
+  text-align: center;
+  /* border-style: solid; */
+  /* opacity: 70%; */
+}
+
+.row {
+  margin: 10px 0;
+}
+
+.parents-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .info-event {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+.col {
+  flex: 10;
+  margin: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn-rsvp {
   background: #976071;
   color: #fff;
   border: 2px solid;
   width: 15%;
-  padding: 1vw 2vw; /* Adjust padding for rectangular shape */
+  padding: 1vw 1vw; /* Adjust padding for rectangular shape */
   border-radius: 10px; /* Rounded edges */
   position: relative; /* Absolute positioning for centering */
   top: 65.5%; /* Adjust the top position of the button */
@@ -1712,7 +1759,7 @@ form label {
   transform: translate(-50%, -50%); /* Center the button */
   z-index: 2; /* Set a higher z-index than the image */
   text-align: center; /* Center the text inside the button */
-  font-size: 2vw; /* Responsive font size */
+  font-size: 1vw; /* Responsive font size */
   cursor: pointer; /* Change cursor to pointer on hover */
   text-decoration: none; /* Remove underline from link */
 }
@@ -1770,10 +1817,35 @@ form label {
   text-align: center;
 }
 
+.parents-name {
+  font-family: 'SPECTRAL SC', serif;
+  margin-top: 20px;
+  font-size: 22.3px;
+  color: #976071;
+  text-align: center;
+}
+
+.parent-description {
+  font-family: 'SPECTRAL SC', serif;
+  font-size: 13.68px;
+}
+
+.ucapan {
+  font-family: 'SPECTRAL SC', serif;
+  font-size: 22.14px;
+  letter-spacing: 5%;
+  line-height: 31.9px;
+}
+
 .footer-text {
   font-family: 'Allison';
   color: #976071;
   font-size: 70px;
+}
+
+.main-text {
+  font-family: 'SenjaMentari';
+  color: #976071;
 }
 .map-wrapper {
   display: flex;
